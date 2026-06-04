@@ -1,0 +1,20 @@
+# Git files — not needed inside the container
+.git
+.gitignore
+
+# Screenshots — only for humans not for the app
+screenshots/
+
+# Documentation — the app does not need to read its own docs
+README.md
+
+# Python cache files — Docker will generate its own
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment files — keeps secrets out of the image
+.env
+
+# VS Code settings — editor files not needed in production
+.vscode/
