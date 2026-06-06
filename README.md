@@ -2,7 +2,7 @@
 
 ## What is this project?
 
-This is Assignment 2 - docker in production. We took the Flask app from Assignment 1 and made it production-ready. That means smaller images, automated pipelines, security scanning, proper secrets handling, and live monitoring.
+This is Assignment 2 is an amazing production - docker in production. We took the Flask app from Assignment 1 and made it production-ready. That means smaller images, automated pipelines, security scanning, proper secrets handling, and live monitoring.
 
 ## How to start everything
 
