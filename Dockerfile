@@ -17,6 +17,8 @@ COPY --from=builder /opt/venv /opt/venv
 
 COPY app.py .
 
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
 RUN adduser --disabled-password --gecos "" appuser && \
     chown -R appuser /app
 USER appuser
