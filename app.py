@@ -10,7 +10,7 @@ r = redis.Redis(host=os.getenv('REDIS_HOST', 'redis'), port=6379)
 def home():
     visits = r.incr('visits')
     return jsonify({
-        "message": "Hello from Docker Production!",
+        "message": "Hello from Docker Production! CI/CD is working!",
         "hostname": socket.gethostname(),
         "visits": int(visits)
     })
